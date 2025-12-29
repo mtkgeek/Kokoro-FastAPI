@@ -36,5 +36,5 @@ tests/
 !requirements.txt
 
 # Docker
-Dockerfile*
-docker-compose*
+# Keep Dockerfiles and docker-compose files included in the build context
+# Avoid broad ignore patterns like 'Dockerfile*' or 'docker-compose*' that exclude used files

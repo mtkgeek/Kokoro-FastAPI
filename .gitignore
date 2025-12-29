@@ -49,8 +49,7 @@ app
 api/temp_files/
 
 # Docker
-Dockerfile*
-docker-compose*
+# Keep Dockerfiles and docker-compose files tracked; avoid broad ignore patterns
 examples/ebook_test/chapter_to_audio.py
 examples/ebook_test/chapters_to_audio.py
 examples/ebook_test/parse_epub.py
