@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  kokoro-tts:
+  kokoro_tts:
     build:
       context: .
       dockerfile: docker/cpu/Dockerfile
