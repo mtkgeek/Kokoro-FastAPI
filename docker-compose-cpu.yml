@@ -6,8 +6,8 @@ services:
       dockerfile: docker/cpu/Dockerfile
     # Note: Bind mounting local paths like ../../api is problematic in production.
     # It is better to ensure your Dockerfile COPY commands include the api folder.
-    # volumes:
-    #   - ./api:/app/api 
+    volumes:
+      - kokoro-models:/app/api/src/models/v1_0 
     ports:
       - "8880:8880"
     environment:

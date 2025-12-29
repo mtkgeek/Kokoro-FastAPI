@@ -5,8 +5,8 @@ services:
     build:
       context: .
       dockerfile: docker/gpu/Dockerfile
-    # volumes:
-    #   - ../../api:/app/api
+    volumes:
+      - kokoro-models:/app/api/src/models/v1_0
     user: "1001:1001"  # Ensure container runs as UID 1001 (appuser)
     ports:
       - "8880:8880"
