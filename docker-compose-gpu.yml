@@ -4,9 +4,9 @@ services:
     # image: ghcr.io/remsky/kokoro-fastapi-gpu:v${VERSION}
     build:
       context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ../../api:/app/api
+      dockerfile: docker/gpu/Dockerfile
+    # volumes:
+    #   - ../../api:/app/api
     user: "1001:1001"  # Ensure container runs as UID 1001 (appuser)
     ports:
       - "8880:8880"
