@@ -2,8 +2,8 @@ name: kokoro-fastapi-cpu
 services:
   kokoro-tts:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ../..
+      dockerfile: docker/cpu/Dockerfile
     volumes:
       - ../../api:/app/api
     ports:
