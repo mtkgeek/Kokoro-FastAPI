@@ -3,8 +3,8 @@ services:
   kokoro-tts:
     # image: ghcr.io/remsky/kokoro-fastapi-gpu:v${VERSION}
     build:
-      context: ../..
-      dockerfile: docker/gpu/Dockerfile
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ../../api:/app/api
     user: "1001:1001"  # Ensure container runs as UID 1001 (appuser)
